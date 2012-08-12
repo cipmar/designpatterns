@@ -1,35 +1,35 @@
 <class-diagram version="1.0.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true">  
-  <class id="1" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.ConcreteImplementor1" 
+  <class id="1" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.ConcreteImplementorA" 
     project="designpatterns" 
-    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/ConcreteImplementor1.java" binary="false">    
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/ConcreteImplementorA.java" binary="false">    
     <position height="-1" width="-1" x="549" y="248"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.ConcreteImplementor2" 
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.ConcreteImplementorB" 
     project="designpatterns" 
-    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/ConcreteImplementor2.java" binary="false">    
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/ConcreteImplementorB.java" binary="false">    
     <position height="-1" width="-1" x="753" y="248"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="3" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.RafinedAbstraction2" 
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.RafinedAbstractionB" 
     project="designpatterns" 
-    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/RafinedAbstraction2.java" binary="false">    
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/RafinedAbstractionB.java" binary="false">    
     <position height="-1" width="-1" x="334" y="240"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="4" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.RafinedAbstraction1" 
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.RafinedAbstractionA" 
     project="designpatterns" 
-    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/RafinedAbstraction1.java" binary="false">    
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/RafinedAbstractionA.java" binary="false">    
     <position height="-1" width="-1" x="120" y="240"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      

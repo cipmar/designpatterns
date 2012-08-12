@@ -1,6 +1,6 @@
 package ro.rmarius.designpatterns.bridge;
 
-public class ConcreteImplementor1 implements Implementor {
+public class ConcreteImplementorA implements Implementor {
 
 	@Override
 	public void implementation() {
