@@ -1,0 +1,87 @@
+<class-diagram version="1.0.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.ConcreteImplementor1" 
+    project="designpatterns" 
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/ConcreteImplementor1.java" binary="false">    
+    <position height="-1" width="-1" x="549" y="248"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.ConcreteImplementor2" 
+    project="designpatterns" 
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/ConcreteImplementor2.java" binary="false">    
+    <position height="-1" width="-1" x="753" y="248"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.RafinedAbstraction2" 
+    project="designpatterns" 
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/RafinedAbstraction2.java" binary="false">    
+    <position height="-1" width="-1" x="334" y="240"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.RafinedAbstraction1" 
+    project="designpatterns" 
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/RafinedAbstraction1.java" binary="false">    
+    <position height="-1" width="-1" x="120" y="240"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.Implementor" 
+    project="designpatterns" file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/Implementor.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="621" y="82"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="ro.rmarius.designpatterns.bridge.Abstraction" 
+    project="designpatterns" file="/designpatterns/src/main/java/ro/rmarius/designpatterns/bridge/Abstraction.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="213" y="82"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <realization id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <association id="11">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="12" name="implementor"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
