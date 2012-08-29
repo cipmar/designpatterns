@@ -1,0 +1,65 @@
+<class-diagram version="1.0.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" corner="BOTTOM_RIGHT" language="java" 
+    name="ro.rmarius.designpatterns.strategy.compression.ZipCompressionStrategy" project="designpatterns" 
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/strategy/compression/ZipCompressionStrategy.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="677" y="223"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" 
+    name="ro.rmarius.designpatterns.strategy.compression.RarCompressionStrategy" project="designpatterns" 
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/strategy/compression/RarCompressionStrategy.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="459" y="229"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" corner="BOTTOM_RIGHT" language="java" 
+    name="ro.rmarius.designpatterns.strategy.compression.CompressionStrategy" project="designpatterns" 
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/strategy/compression/CompressionStrategy.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="514" y="79"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" 
+    name="ro.rmarius.designpatterns.strategy.compression.FileCompressor" project="designpatterns" 
+    file="/designpatterns/src/main/java/ro/rmarius/designpatterns/strategy/compression/FileCompressor.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="161" y="79"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <realization id="5">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="6">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="7" name="compressionStrategy"/>      
+      <multiplicity id="8" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+    visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
