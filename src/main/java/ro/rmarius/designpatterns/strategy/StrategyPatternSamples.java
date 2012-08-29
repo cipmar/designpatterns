@@ -1,5 +1,12 @@
 package ro.rmarius.designpatterns.strategy;
 
+import ro.rmarius.designpatterns.strategy.characters.AxeBehavior;
+import ro.rmarius.designpatterns.strategy.characters.Character;
+import ro.rmarius.designpatterns.strategy.characters.King;
+import ro.rmarius.designpatterns.strategy.characters.KnifeBehavior;
+import ro.rmarius.designpatterns.strategy.characters.Knight;
+import ro.rmarius.designpatterns.strategy.characters.Queen;
+import ro.rmarius.designpatterns.strategy.characters.SwordBehavior;
 import ro.rmarius.designpatterns.strategy.compression.FileCompressor;
 import ro.rmarius.designpatterns.strategy.compression.RarCompressionStrategy;
 import ro.rmarius.designpatterns.strategy.compression.ZipCompressionStrategy;
@@ -60,5 +67,21 @@ public class StrategyPatternSamples {
 
 		decoyDuck.performFly();
 		decoyDuck.performQuack();
+
+		System.out.println();
+
+		// characters sample
+		Character character1 = new King();
+		character1.setWeponBehavior(new AxeBehavior());
+
+		Character character2 = new Queen();
+		character2.setWeponBehavior(new SwordBehavior());
+
+		Character character3 = new Knight();
+		character3.setWeponBehavior(new KnifeBehavior());
+
+		character1.fight();
+		character2.fight();
+		character3.fight();
 	}
 }
